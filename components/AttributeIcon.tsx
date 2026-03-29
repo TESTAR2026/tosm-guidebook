@@ -80,16 +80,22 @@ const ICONS: Record<string, { bg: string; accent?: string; symbol: React.ReactNo
       </g>
     ),
   },
+  무속성: {
+    bg: "#555555",
+    symbol: (
+      <text x="16" y="21" textAnchor="middle" fontSize="14" fontWeight="bold" fill="white" fontFamily="sans-serif">무</text>
+    ),
+  },
 };
 
 export function AttributeIcon({ attribute, size = 32 }: AttributeIconProps) {
   const icon = ICONS[attribute];
   if (!icon) {
-    // fallback: colored circle
+    // fallback: white circle (no attribute / empty)
     return (
-      <div
-        style={{ width: size, height: size, borderRadius: "50%", backgroundColor: "#888", border: "2px solid #c8920a" }}
-      />
+      <svg width={size} height={size} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="15" fill="white" stroke="#d1d5db" strokeWidth="1.5"/>
+      </svg>
     );
   }
 

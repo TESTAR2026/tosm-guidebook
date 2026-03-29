@@ -5,6 +5,7 @@ export const ATTRIBUTE_COLORS: Record<string, string> = {
   얼음: "#0000ff",
   신성: "#3b3b3b",
   어둠: "#6b22b4",
+  무속성: "#555555",
 };
 
 export const ATTRIBUTE_BG_CLASSES: Record<string, string> = {
@@ -65,7 +66,7 @@ export const SKILL_LINEAGE_STYLES: Record<string, string> = {
 
 export const GRADES = ["R", "SR", "UR"];
 export const LINEAGES = ["전투", "사격", "신앙", "암살", "마법", "가디스"];
-export const ATTRIBUTES = ["불", "땅", "전기", "얼음", "신성", "어둠"];
+export const ATTRIBUTES = ["불", "땅", "전기", "얼음", "신성", "어둠", "무속성"];
 
 export const CUPAL_PASSIVE_TYPES = ["관통", "회피", "명중", "블록"];
 export const CUPAL_RACES = ["야수형", "악마형", "변이형", "식물형", "곤충형", "초월형", "인간형"];
