@@ -12,13 +12,17 @@ export default function CupalsPage() {
   const [search, setSearch] = useState("");
   const [grade, setGrade] = useState("");
   const [attribute, setAttribute] = useState("");
-  const [race, setRace] = useState("");
+  const [passiveType, setPassiveType] = useState("");
 
   const filtered = cupals.filter((c) => {
     if (search && !c.name.toLowerCase().includes(search.toLowerCase())) return false;
     if (grade && c.grade !== grade) return false;
-    if (attribute && c.attribute !== attribute) return false;
-    if (race && c.race !== race) return false;
+    if (passiveType && c.passiveBuffType !== passiveType) return false;
+    if (attribute) {
+      const matchAttack = c.attack === attribute;
+      const matchExtra = c.extraDamageAttribute === attribute;
+      if (!matchAttack && !matchExtra) return false;
+    }
     return true;
   });
 
@@ -36,7 +40,7 @@ export default function CupalsPage() {
           search={search} setSearch={setSearch}
           grade={grade} setGrade={setGrade}
           attribute={attribute} setAttribute={setAttribute}
-          race={race} setRace={setRace}
+          passiveType={passiveType} setPassiveType={setPassiveType}
         />
       </div>
 

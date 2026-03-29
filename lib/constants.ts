@@ -66,4 +66,12 @@ export const SKILL_LINEAGE_STYLES: Record<string, string> = {
 export const GRADES = ["R", "SR", "UR"];
 export const LINEAGES = ["전투", "사격", "신앙", "암살", "마법", "가디스"];
 export const ATTRIBUTES = ["불", "땅", "전기", "얼음", "신성", "어둠"];
-export const CUPAL_RACES = ["야수형", "악마형", "변이형", "식물형", "곤충형", "초월형", "인간형"];
+
+export const CUPAL_PASSIVE_TYPES = ["관통", "회피", "명중", "블록"];
+
+export const CUPAL_PASSIVE_STYLES: Record<string, string> = {
+  관통: "bg-red-100 text-red-700 border border-red-200",
+  회피: "bg-green-100 text-green-700 border border-green-200",
+  명중: "bg-sky-100 text-sky-700 border border-sky-200",
+  블록: "bg-indigo-100 text-indigo-700 border border-indigo-200",
+};
