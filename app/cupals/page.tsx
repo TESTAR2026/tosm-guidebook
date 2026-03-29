@@ -13,6 +13,7 @@ export default function CupalsPage() {
   const [grade, setGrade] = useState("");
   const [attribute, setAttribute] = useState("");
   const [passiveType, setPassiveType] = useState("");
+  const [race, setRace] = useState("");
 
   const filtered = cupals.filter((c) => {
     if (search && !c.name.toLowerCase().includes(search.toLowerCase())) return false;
@@ -22,6 +23,10 @@ export default function CupalsPage() {
       const matchAttack = c.attack === attribute;
       const matchExtra = c.extraDamageAttribute === attribute;
       if (!matchAttack && !matchExtra) return false;
+    }
+    if (race) {
+      const matchRace = c.extraDamageRace === race || c.extraDamageRace === "전체";
+      if (!matchRace) return false;
     }
     return true;
   });
@@ -41,6 +46,7 @@ export default function CupalsPage() {
           grade={grade} setGrade={setGrade}
           attribute={attribute} setAttribute={setAttribute}
           passiveType={passiveType} setPassiveType={setPassiveType}
+          race={race} setRace={setRace}
         />
       </div>
 
