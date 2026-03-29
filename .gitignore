@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# guidebook build artifacts
+guidebook/node_modules/
+guidebook/.next/
+guidebook/out/
+guidebook/.env*.local
+guidebook/*.tsbuildinfo
+guidebook/next-env.d.ts
