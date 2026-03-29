@@ -29,6 +29,12 @@ export default function RootLayout({
                 >
                   펠로우
                 </a>
+                <a
+                  href="/cupals"
+                  className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  큐폴
+                </a>
               </nav>
             </div>
           </div>

@@ -66,3 +66,4 @@ export const SKILL_LINEAGE_STYLES: Record<string, string> = {
 export const GRADES = ["R", "SR", "UR"];
 export const LINEAGES = ["전투", "사격", "신앙", "암살", "마법", "가디스"];
 export const ATTRIBUTES = ["불", "땅", "전기", "얼음", "신성", "어둠"];
+export const CUPAL_RACES = ["야수형", "악마형", "변이형", "식물형", "곤충형", "초월형", "인간형"];
