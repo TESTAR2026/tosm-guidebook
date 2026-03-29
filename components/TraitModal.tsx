@@ -20,19 +20,19 @@ export function TraitModal({ trait, index }: TraitModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <div className="flex items-center justify-between py-3 px-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-amber-300 transition-colors">
-        <div className="flex items-center gap-3">
-          <span className="w-6 h-6 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center flex-shrink-0">
-            {index + 1}
-          </span>
-          <span className="font-medium text-gray-800 text-sm">{trait.name}</span>
-        </div>
-        <DialogTrigger asChild>
-          <button className="w-6 h-6 rounded-full bg-gray-200 hover:bg-amber-100 hover:text-amber-700 text-gray-500 text-xs font-bold flex items-center justify-center flex-shrink-0 transition-colors">
+      <DialogTrigger asChild>
+        <div className="flex items-center justify-between py-3 px-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-amber-300 hover:bg-amber-50 transition-colors cursor-pointer">
+          <div className="flex items-center gap-3">
+            <span className="w-6 h-6 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center flex-shrink-0">
+              {index + 1}
+            </span>
+            <span className="font-medium text-gray-800 text-sm">{trait.name}</span>
+          </div>
+          <span className="w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center flex-shrink-0">
             +
-          </button>
-        </DialogTrigger>
-      </div>
+          </span>
+        </div>
+      </DialogTrigger>
 
       <DialogContent className="max-w-md">
         <DialogHeader>
@@ -44,7 +44,7 @@ export function TraitModal({ trait, index }: TraitModalProps) {
           </DialogTitle>
         </DialogHeader>
         <div className="mt-2">
-          <p className="text-sm text-gray-700 leading-relaxed">{trait.description}</p>
+          <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{trait.description}</p>
         </div>
       </DialogContent>
     </Dialog>

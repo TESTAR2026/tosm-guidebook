@@ -27,34 +27,34 @@ export function SkillModal({ skill, index, fellowAttribute }: SkillModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <div className="flex items-center justify-between py-3 px-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-amber-300 transition-colors">
-        <div className="flex items-center gap-3 flex-wrap flex-1 min-w-0">
-          <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center flex-shrink-0">
-            {index + 1}
-          </span>
-          <span className="font-medium text-gray-800 text-sm truncate">{skill.name}</span>
-          <div className="flex items-center gap-1.5 flex-wrap">
-            {skill.type && (
-              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${typeStyle}`}>
-                {skill.type}
-              </span>
-            )}
-            {skill.lineage && lineageStyle && (
-              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${lineageStyle}`}>
-                {skill.lineage}
-              </span>
-            )}
-            {displayAttribute && (
-              <AttributeBadge attribute={displayAttribute} size="sm" />
-            )}
+      <DialogTrigger asChild>
+        <div className="flex items-center justify-between py-3 px-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-pointer">
+          <div className="flex items-center gap-3 flex-wrap flex-1 min-w-0">
+            <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center flex-shrink-0">
+              {index + 1}
+            </span>
+            <span className="font-medium text-gray-800 text-sm truncate">{skill.name}</span>
+            <div className="flex items-center gap-1.5 flex-wrap">
+              {skill.type && (
+                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${typeStyle}`}>
+                  {skill.type}
+                </span>
+              )}
+              {skill.lineage && lineageStyle && (
+                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${lineageStyle}`}>
+                  {skill.lineage}
+                </span>
+              )}
+              {displayAttribute && (
+                <AttributeBadge attribute={displayAttribute} size="sm" />
+              )}
+            </div>
           </div>
-        </div>
-        <DialogTrigger asChild>
-          <button className="w-6 h-6 rounded-full bg-gray-200 hover:bg-blue-100 hover:text-blue-700 text-gray-500 text-xs font-bold flex items-center justify-center flex-shrink-0 ml-2 transition-colors">
+          <span className="w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center flex-shrink-0 ml-2">
             +
-          </button>
-        </DialogTrigger>
-      </div>
+          </span>
+        </div>
+      </DialogTrigger>
 
       <DialogContent className="max-w-md">
         <DialogHeader>

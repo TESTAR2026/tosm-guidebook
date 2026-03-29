@@ -137,7 +137,7 @@ export default function FellowDetailPage({ params }: PageProps) {
           </div>
           <div className="p-4">
             <div className="bg-pink-50 rounded-lg p-4 border border-pink-100">
-              <p className="text-sm text-gray-700 leading-relaxed">{fellow.synergy}</p>
+              <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{fellow.synergy}</p>
             </div>
           </div>
         </div>

@@ -39,8 +39,7 @@ export const GRADE_STYLES: Record<
   },
   UR: {
     label: "UR",
-    className:
-      "bg-gradient-to-r from-amber-400 to-orange-500 text-white border border-amber-500",
+    className: "bg-amber-500 text-white border border-amber-600",
   },
 };
 
