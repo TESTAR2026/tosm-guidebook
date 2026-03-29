@@ -85,7 +85,6 @@ export function SkillModal({ skill, index, fellowAttribute }: SkillModalProps) {
                 <AttributeIcon attribute={displayAttribute} size={22} />
                 <span className="text-sm font-medium text-gray-700">
                   {displayAttribute} 속성
-                  {!skill.attribute && <span className="text-xs text-gray-400 ml-1">(상속)</span>}
                 </span>
               </span>
             )}

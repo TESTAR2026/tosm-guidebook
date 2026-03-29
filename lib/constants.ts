@@ -1,10 +1,10 @@
 export const ATTRIBUTE_COLORS: Record<string, string> = {
-  불: "#ef4444",
-  땅: "#92400e",
-  전기: "#eab308",
-  얼음: "#38bdf8",
-  신성: "#f59e0b",
-  어둠: "#7c3aed",
+  불: "#ff0000",
+  땅: "#dc6f03",
+  전기: "#18bec8",
+  얼음: "#0000ff",
+  신성: "#3b3b3b",
+  어둠: "#6b22b4",
 };
 
 export const ATTRIBUTE_BG_CLASSES: Record<string, string> = {
