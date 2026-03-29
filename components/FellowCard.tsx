@@ -36,7 +36,7 @@ export function FellowCard({ fellow }: FellowCardProps) {
             <AttributeBadge attribute={fellow.attribute} size="sm" />
             <span className="text-xs text-gray-500">{fellow.attribute}</span>
           </div>
-          {fellow.class && fellow.class !== fellow.lineage && (
+          {fellow.class && (
             <p className="text-xs text-gray-400 mt-1.5">{fellow.class}</p>
           )}
         </div>
