@@ -31,9 +31,9 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
           <button
             key={g}
             onClick={() => toggle(grade, g, setGrade)}
-            className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+            className={`h-7 px-3 rounded-full text-xs font-bold transition-all ${
               grade === g
-                ? GRADE_STYLES[g]?.className + " ring-2 ring-offset-1 ring-amber-400"
+                ? GRADE_STYLES[g]?.className + " ring-2 ring-inset ring-amber-400"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -48,9 +48,9 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
           <button
             key={l}
             onClick={() => toggle(lineage, l, setLineage)}
-            className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
+            className={`h-7 px-3 rounded-full text-xs font-semibold transition-all ${
               lineage === l
-                ? (LINEAGE_STYLES[l] || "bg-gray-200 text-gray-700") + " ring-2 ring-offset-1 ring-amber-400"
+                ? (LINEAGE_STYLES[l] || "bg-gray-200 text-gray-700") + " ring-2 ring-inset ring-amber-400"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -65,9 +65,9 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
           <button
             key={a}
             onClick={() => toggle(attribute, a, setAttribute)}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold transition-all ${
+            className={`h-7 flex items-center gap-1.5 px-2.5 rounded-full text-xs font-semibold transition-all ${
               attribute === a
-                ? "bg-gray-200 ring-2 ring-offset-1 ring-amber-400"
+                ? "bg-gray-200 ring-2 ring-inset ring-amber-400"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
