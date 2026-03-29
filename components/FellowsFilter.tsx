@@ -1,7 +1,8 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
-import { GRADES, LINEAGES, ATTRIBUTES, ATTRIBUTE_COLORS, LINEAGE_STYLES, GRADE_STYLES } from "@/lib/constants";
+import { GRADES, LINEAGES, ATTRIBUTES, LINEAGE_STYLES, GRADE_STYLES } from "@/lib/constants";
+import { AttributeIcon } from "./AttributeIcon";
 
 interface FellowsFilterProps {
   search: string; setSearch: (v: string) => void;
@@ -64,15 +65,14 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
           <button
             key={a}
             onClick={() => toggle(attribute, a, setAttribute)}
-            className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold transition-all border ${
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold transition-all ${
               attribute === a
-                ? "ring-2 ring-offset-1 ring-amber-400 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border-transparent"
+                ? "bg-gray-200 ring-2 ring-offset-1 ring-amber-400"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
-            style={attribute === a ? { backgroundColor: ATTRIBUTE_COLORS[a], borderColor: ATTRIBUTE_COLORS[a] } : {}}
           >
-            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: ATTRIBUTE_COLORS[a] }} />
-            {a}
+            <AttributeIcon attribute={a} size={18} />
+            <span>{a}</span>
           </button>
         ))}
       </div>
