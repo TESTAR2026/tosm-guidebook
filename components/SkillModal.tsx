@@ -10,7 +10,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { AttributeBadge } from "./AttributeBadge";
-import { SKILL_TYPE_STYLES, SKILL_LINEAGE_STYLES, ATTRIBUTE_COLORS } from "@/lib/constants";
+import { AttributeIcon } from "./AttributeIcon";
+import { SKILL_TYPE_STYLES, SKILL_LINEAGE_STYLES } from "@/lib/constants";
 
 interface SkillModalProps {
   skill: Skill;
@@ -80,12 +81,12 @@ export function SkillModal({ skill, index, fellowAttribute }: SkillModalProps) {
               </span>
             )}
             {displayAttribute && (
-              <span
-                className="text-xs px-2.5 py-1 rounded-full font-medium text-white flex items-center gap-1"
-                style={{ backgroundColor: ATTRIBUTE_COLORS[displayAttribute] }}
-              >
-                {displayAttribute} 속성
-                {!skill.attribute && <span className="opacity-70">(상속)</span>}
+              <span className="flex items-center gap-1.5">
+                <AttributeIcon attribute={displayAttribute} size={22} />
+                <span className="text-sm font-medium text-gray-700">
+                  {displayAttribute} 속성
+                  {!skill.attribute && <span className="text-xs text-gray-400 ml-1">(상속)</span>}
+                </span>
               </span>
             )}
           </div>

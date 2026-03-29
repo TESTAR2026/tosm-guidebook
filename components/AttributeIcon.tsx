@@ -100,10 +100,8 @@ export function AttributeIcon({ attribute, size = 32 }: AttributeIconProps) {
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Outer gold border */}
-      <circle cx="16" cy="16" r="15" fill="#c8920a" />
-      {/* Inner background */}
-      <circle cx="16" cy="16" r="13" fill={icon.bg} />
+      {/* Background only, no border */}
+      <circle cx="16" cy="16" r="15" fill={icon.bg} />
       {/* Symbol */}
       {icon.symbol}
     </svg>
