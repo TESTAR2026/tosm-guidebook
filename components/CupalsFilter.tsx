@@ -81,7 +81,7 @@ export function CupalsFilter({
             }`}
           >
             <AttributeIcon attribute={a} size={18} />
-            <span>{a}</span>
+            <span>{a === "무속성" ? "무" : a}</span>
           </button>
         ))}
       </div>

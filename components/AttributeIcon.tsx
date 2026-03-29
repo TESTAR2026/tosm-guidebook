@@ -83,7 +83,11 @@ const ICONS: Record<string, { bg: string; accent?: string; symbol: React.ReactNo
   무속성: {
     bg: "#555555",
     symbol: (
-      <text x="16" y="21" textAnchor="middle" fontSize="14" fontWeight="bold" fill="white" fontFamily="sans-serif">무</text>
+      <g>
+        {/* Concentric rings - neutral/no element symbol */}
+        <circle cx="16" cy="16" r="7" fill="none" stroke="white" strokeWidth="2"/>
+        <circle cx="16" cy="16" r="3" fill="white"/>
+      </g>
     ),
   },
 };
