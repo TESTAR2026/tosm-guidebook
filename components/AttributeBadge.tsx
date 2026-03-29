@@ -1,4 +1,4 @@
-import { ATTRIBUTE_COLORS } from "@/lib/constants";
+import { AttributeIcon } from "./AttributeIcon";
 
 interface AttributeBadgeProps {
   attribute: string;
@@ -6,21 +6,10 @@ interface AttributeBadgeProps {
 }
 
 export function AttributeBadge({ attribute, size = "md" }: AttributeBadgeProps) {
-  const color = ATTRIBUTE_COLORS[attribute] || "#9ca3af";
-
-  const sizeClasses = {
-    sm: "w-5 h-5 text-[9px]",
-    md: "w-7 h-7 text-xs",
-    lg: "w-9 h-9 text-sm",
-  };
-
+  const sizeMap = { sm: 20, md: 28, lg: 36 };
   return (
-    <span
-      className={`inline-flex items-center justify-center rounded-full font-bold text-white ${sizeClasses[size]}`}
-      style={{ backgroundColor: color }}
-      title={attribute}
-    >
-      {attribute.charAt(0)}
+    <span title={attribute} className="inline-flex items-center justify-center">
+      <AttributeIcon attribute={attribute} size={sizeMap[size]} />
     </span>
   );
 }
