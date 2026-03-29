@@ -26,7 +26,7 @@ function SkillEffectRow({ color, label, text }: SkillEffectRowProps) {
   return (
     <div className={`rounded-lg p-3 border ${color}`}>
       <p className="text-xs font-semibold mb-0.5 opacity-70">{label}</p>
-      <p className="text-sm text-gray-700 leading-relaxed">{text}</p>
+      <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{text}</p>
     </div>
   );
 }
@@ -104,24 +104,6 @@ export default function CupalDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Passive Section */}
-      <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden mb-5 shadow-sm">
-        <div className="px-5 py-4 border-b border-gray-100">
-          <h2 className="font-bold text-gray-900 flex items-center gap-2">
-            <span className="w-1.5 h-5 rounded-full bg-amber-400 inline-block" />
-            패시브
-            <span className={`ml-1 text-xs font-bold px-2 py-0.5 rounded-full ${passiveStyle}`}>
-              {cupal.passiveBuffType}
-            </span>
-          </h2>
-        </div>
-        <div className="p-4">
-          <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
-            {cupal.passiveDescription}
-          </p>
-        </div>
-      </div>
-
       {/* Skill Section */}
       {cupal.skillName && (
         <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden mb-5 shadow-sm">
@@ -191,6 +173,24 @@ export default function CupalDetailPage({ params }: PageProps) {
           </div>
         </div>
       )}
+
+      {/* Passive Section */}
+      <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden mb-5 shadow-sm">
+        <div className="px-5 py-4 border-b border-gray-100">
+          <h2 className="font-bold text-gray-900 flex items-center gap-2">
+            <span className="w-1.5 h-5 rounded-full bg-amber-400 inline-block" />
+            패시브
+            <span className={`ml-1 text-xs font-bold px-2 py-0.5 rounded-full ${passiveStyle}`}>
+              {cupal.passiveBuffType}
+            </span>
+          </h2>
+        </div>
+        <div className="p-4">
+          <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
+            {cupal.passiveDescription}
+          </p>
+        </div>
+      </div>
 
       {/* Companion Effect */}
       {cupal.companionEffect && (
