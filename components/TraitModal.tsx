@@ -28,9 +28,6 @@ export function TraitModal({ trait, index }: TraitModalProps) {
             </span>
             <span className="font-medium text-gray-800 text-sm">{trait.name}</span>
           </div>
-          <span className="w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center flex-shrink-0">
-            +
-          </span>
         </div>
       </DialogTrigger>
 
