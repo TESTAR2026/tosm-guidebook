@@ -169,5 +169,24 @@
     "skillCooldown": "재사용 대기시간 120초",
     "companionEffect": "치명타 피해 +17%",
     "possessionEffect": "관통 +62"
+  },
+  {
+    "id": "raima",
+    "name": "라이마",
+    "grade": "UR",
+    "passiveBuffType": "관통",
+    "passiveDescription": "주인의 관통 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "운명의 수레바퀴",
+    "attack": "",
+    "debuff": "",
+    "attackBuff": "",
+    "defenseBuff": "랜덤 버프",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인의 주변에 운명의 수레바퀴를 1 ~ 3개 생성한다. 3초내로 주인에게 이로운 버프를 부여하며 파괴된다.\n(이로운 버프 종류 : 운명의 수레바퀴 - HP 회복, 운명의 수레바퀴 - SP 회복, 운명의 수레바퀴 - 이동속도 증가)",
+    "skillCooldown": "재사용 대기시간 90초",
+    "companionEffect": "HP 자연 회복 +42%",
+    "possessionEffect": "회피 +62"
   }
 ]
