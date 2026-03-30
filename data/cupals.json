@@ -207,5 +207,24 @@
     "skillCooldown": "재사용 대기시간 54초",
     "companionEffect": "SP 자연 회복 +28",
     "possessionEffect": "블록 +62"
+  },
+  {
+    "id": "rexifer",
+    "name": "렉시퍼",
+    "grade": "UR",
+    "passiveBuffType": "블록",
+    "passiveDescription": "주인의 블록 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "어둠의 번개",
+    "attack": "어둠",
+    "debuff": "SP 자연 회복 불가 효과와 함께 공격 시 피해량 21% 감소",
+    "attackBuff": "",
+    "defenseBuff": "",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주변 8m 이내 적 5인의 위치에 어둠의 번개를 내리쳐 주인의 공격력 574%의 어둠 속성 피해를 입히고 '어둠의 번개 - 저주' 상태를 유발한다. '어둠의 번개 - 저주'는 15초간 지속되며 3초마다 주인의 공격력 100%의 지속 피해를 입히고 SP 자연 회복 불가 효과와 함께 공격 시 피해량을 21% 감소시킨다.\n\n*[어둠의 번개 - 저주] SP가 자연 회복되지 않으며 3초마다 어둠 속성 피해를 입는다\n주는 피해량이 감소한다",
+    "skillCooldown": "재사용 대기시간 60초",
+    "companionEffect": "기본 공격 SP 회복 +34",
+    "possessionEffect": "공격력 +62"
   }
 ]
