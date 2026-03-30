@@ -93,5 +93,24 @@
     "skillCooldown": "재사용 대기시간 45초",
     "companionEffect": "HP 자연 회복 +42%",
     "possessionEffect": "방어력 +62"
+  },
+  {
+    "id": "austeya",
+    "name": "아우스테야",
+    "grade": "UR",
+    "passiveBuffType": "회피",
+    "passiveDescription": "주인의 회피 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "넥타르",
+    "attack": "",
+    "debuff": "",
+    "attackBuff": "",
+    "defenseBuff": "",
+    "heal": "10초간 주변 5m 아군의 체력을 1초마다 5% 회복\n꿀 덩어리를 먹으면 최대체력의 15%를 회복",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인의 위치에 꿀 덩어리를 생성한다. 꿀 덩어리는 10초간 주변 5m 아군의 체력을 1초마다 5% 회복시키는 꿀의 마법진을 생성한다. 꿀 덩어리를 먹으면 최대체력의 15%를 회복한다.\n자동 전투 진행 시 주인의 HP가 80% 이하일 때 스킬을 사용한다.",
+    "skillCooldown": "재사용 대기시간 45초",
+    "companionEffect": "HP 자연 회복 +42%",
+    "possessionEffect": "명중 +62"
   }
 ]
