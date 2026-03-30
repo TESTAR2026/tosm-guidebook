@@ -131,5 +131,24 @@
     "skillCooldown": "재사용 대기시간 120초",
     "companionEffect": "SP 자연 회복 +28",
     "possessionEffect": "치명타 발생 +74"
+  },
+  {
+    "id": "bakarine",
+    "name": "바카리네",
+    "grade": "UR",
+    "passiveBuffType": "블록",
+    "passiveDescription": "주인의 블록 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "여행자를 위한 쉼터",
+    "attack": "",
+    "debuff": "",
+    "attackBuff": "",
+    "defenseBuff": "",
+    "heal": "10초간 쉼터에서 HP와 SP가 1초마다 8.4%씩 회복",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인의 위치에 10초간 쉼터가 생성된다.\n쉼터에서는 HP와 SP가 1초마다 8.4%씩 회복된다.",
+    "skillCooldown": "재사용 대기시간 100초",
+    "companionEffect": "비전투 시 SP 회복 +",
+    "possessionEffect": "치명타 피해 +38"
   }
 ]
