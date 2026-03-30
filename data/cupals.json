@@ -112,5 +112,24 @@
     "skillCooldown": "재사용 대기시간 45초",
     "companionEffect": "HP 자연 회복 +42%",
     "possessionEffect": "명중 +62"
+  },
+  {
+    "id": "gabiya",
+    "name": "가비야",
+    "grade": "UR",
+    "passiveBuffType": "블록",
+    "passiveDescription": "주인의 블록 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "아우쿠라스",
+    "attack": "",
+    "debuff": "",
+    "attackBuff": "'정화의 불꽃' 상태인 적은 주인에게 받는 피해가 30% 증가",
+    "defenseBuff": "",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인의 위치에 정화의 불꽃을 설치한다. 정화의 불꽃은 10초간 지속되며 주변 반경 5m 내의 적에게 '정화의 불꽃' 상태를 유발하며 1초마다 주인의 공격력 92%의 피해를 준다.\n'정화의 불꽃' 상태인 적은 주인에게 받는 피해가 30% 증가한다.\n범위를 벗어나면 '정화의 불꽃'은 해제된다.",
+    "skillCooldown": "재사용 대기시간 120초",
+    "companionEffect": "SP 자연 회복 +28",
+    "possessionEffect": "치명타 발생 +74"
   }
 ]
