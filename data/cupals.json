@@ -226,5 +226,24 @@
     "skillCooldown": "재사용 대기시간 60초",
     "companionEffect": "기본 공격 SP 회복 +34",
     "possessionEffect": "공격력 +62"
+  },
+  {
+    "id": "jesty",
+    "name": "제스티",
+    "grade": "UR",
+    "passiveBuffType": "관통",
+    "passiveDescription": "주인의 관통 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "칼날 돌개 바람",
+    "attack": "무속성",
+    "debuff": "",
+    "attackBuff": "15초간 피해량 증가 14% 버프",
+    "defenseBuff": "",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "적의 위치에 돌개 바람을 설치하고, 주인에게 15초간 피해량 증가 14% 버프를 부여한다. 돌개 바람은 6초간 지속되며, 1초마다 주인의 공격력의 160% 피해를 준다.",
+    "skillCooldown": "재사용 대기시간 90초",
+    "companionEffect": "기본 공격 SP 회복 +34",
+    "possessionEffect": "방어력 +62"
   }
 ]
