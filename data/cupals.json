@@ -245,5 +245,24 @@
     "skillCooldown": "재사용 대기시간 90초",
     "companionEffect": "기본 공격 SP 회복 +34",
     "possessionEffect": "방어력 +62"
+  },
+  {
+    "id": "small-raima",
+    "name": "작은 라이마",
+    "grade": "UR",
+    "passiveBuffType": "명중",
+    "passiveDescription": "주인의 명중 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "운명",
+    "attack": "무속성",
+    "debuff": "",
+    "attackBuff": "",
+    "defenseBuff": "30초간 받는 피해 10% 감소",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "4.5초 동안 5×2m 범위의 적에게 주인의 공격력 116%의 피해를 주고, 주인에게 30초간 받는 피해 10% 감소 버프를 부여한다\n스킬이 시전되는 동안 이동속도가 25% 감소된 채로 이동은 가능하지만 방향전환은 할 수 없다",
+    "skillCooldown": "재사용 대기시간 100초",
+    "companionEffect": "HP 자연 회복 +42%",
+    "possessionEffect": "회피 +62"
   }
 ]
