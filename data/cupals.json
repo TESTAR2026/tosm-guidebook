@@ -283,5 +283,24 @@
     "skillCooldown": "재사용 대기시간 150초",
     "companionEffect": "SP 자연 회복 +28",
     "possessionEffect": "블록 +62"
+  },
+  {
+    "id": "helga-sercle",
+    "name": "헬가 세르클",
+    "grade": "UR",
+    "passiveBuffType": "관통",
+    "passiveDescription": "주인의 관통 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "블러디 웨이브",
+    "attack": "무속성",
+    "debuff": "10초동안 1초마다 시전자의 공격력의 20% 만큼의 피해\n해당 피해는 방어력을 20% 무시",
+    "attackBuff": "10초 동안 관통 수치가 24.5% 증가",
+    "defenseBuff": "",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인의 주변 적에게 주인의 공격력 571%의 피해를 주고 10초 동안 '출혈' 상태를 유발한다. 또한 주인은 20초 동안 관통 수치가 24.5% 증가한다.\n\n*[출혈] 물리 계열 | HP가 자연 회복되지 않으며 1초마다 시전자의 공격력의 20% 만큼의 피해를 입는다\n해당 피해는 방어력을 20% 무시한다",
+    "skillCooldown": "재사용 대기시간 50초",
+    "companionEffect": "비전투 시 SP 회복 +",
+    "possessionEffect": "공격력 +62"
   }
 ]
