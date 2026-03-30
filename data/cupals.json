@@ -302,5 +302,24 @@
     "skillCooldown": "재사용 대기시간 50초",
     "companionEffect": "비전투 시 SP 회복 +",
     "possessionEffect": "공격력 +62"
+  },
+  {
+    "id": "naktis",
+    "name": "나크티스",
+    "grade": "UR",
+    "passiveBuffType": "명중",
+    "passiveDescription": "주인의 명중 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "검은 밤안개",
+    "attack": "무속성",
+    "debuff": "10초간 이동 속도 50%, 블록 수치 50% 감소",
+    "attackBuff": "",
+    "defenseBuff": "",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "임의의 적 위치에 반경 5m 범위의 밤안개를 뿌린다. 밤안개는 10초간 유지되며 범위 안에 있는 적에게 1초마다 주인의 공격력 155%의 피해를 주고, 이동 속도를 50%, 블록 수치를 50% 감소시킨다.",
+    "skillCooldown": "재사용 대기시간 90초",
+    "companionEffect": "기본 공격 SP 회복 +34",
+    "possessionEffect": "방어력 +62"
   }
 ]
