@@ -188,5 +188,24 @@
     "skillCooldown": "재사용 대기시간 90초",
     "companionEffect": "HP 자연 회복 +42%",
     "possessionEffect": "회피 +62"
+  },
+  {
+    "id": "yurrate",
+    "name": "유라테",
+    "grade": "UR",
+    "passiveBuffType": "회피",
+    "passiveDescription": "주인의 회피 수치가 10.5% 증가한다.\n이 효과는 해당 큐폴이 첫 번째 슬롯에 장착되어 있을 때만 유지되며, 유지 중 SR 등급의 큐폴 스킬 버프는 부여되지 않는다. (이미 부여된 상태면 제거)\n\n주인의 HP가 60% 이하일 때 HP를 35%만큼 회복시킨다. \n(재발동 대기시간 45초)\n해당 효과는 동행 슬롯 위치에 상관없이 발동된다.",
+    "skillName": "고요한 바다",
+    "attack": "",
+    "debuff": "",
+    "attackBuff": "",
+    "defenseBuff": "상태이상을 제거하고 7.5초간 제어형 상태이상에 면역이 되는 버프를 부여",
+    "heal": "",
+    "extraDamageAttribute": "",
+    "extraDamageRace": "",
+    "skillDescription": "주인이 제어형 상태이상에 걸리면 즉시 해당 상태이상을 제거하고 7.5초간 제어형 상태이상에 면역이 되는 버프를 부여한다\n\n해당 스킬은 조건 충족 시 자동으로 사용되며 직접 사용할 수 없다",
+    "skillCooldown": "재사용 대기시간 54초",
+    "companionEffect": "SP 자연 회복 +28",
+    "possessionEffect": "블록 +62"
   }
 ]
