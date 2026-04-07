@@ -77,3 +77,13 @@ export const CUPAL_PASSIVE_STYLES: Record<string, string> = {
   명중: "bg-sky-100 text-sky-700 border border-sky-200",
   블록: "bg-indigo-100 text-indigo-700 border border-indigo-200",
 };
+
+export const CARD_GRADES = ["전설", "영웅", "희귀", "고급", "일반"];
+
+export const CARD_GRADE_STYLES: Record<string, string> = {
+  전설: "bg-amber-500 text-white border border-amber-600",
+  영웅: "bg-violet-100 text-violet-700 border border-violet-300",
+  희귀: "bg-blue-100 text-blue-700 border border-blue-300",
+  고급: "bg-green-100 text-green-700 border border-green-300",
+  일반: "bg-gray-200 text-gray-700 border border-gray-300",
+};
