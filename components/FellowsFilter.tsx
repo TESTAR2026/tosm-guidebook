@@ -77,14 +77,12 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
         ))}
       </div>
 
-      {(search || grade || lineage || attribute) && (
-        <button
-          onClick={() => { setSearch(""); setGrade(""); setLineage(""); setAttribute(""); }}
-          className="text-xs text-gray-400 hover:text-gray-600 underline"
-        >
-          필터 초기화
-        </button>
-      )}
+      <button
+        onClick={() => { setSearch(""); setGrade(""); setLineage(""); setAttribute(""); }}
+        className={`text-xs text-gray-400 hover:text-gray-600 underline ${!(search || grade || lineage || attribute) ? "invisible" : ""}`}
+      >
+        필터 초기화
+      </button>
     </div>
   );
 }

@@ -103,14 +103,12 @@ export function CupalsFilter({
         ))}
       </div>
 
-      {hasFilter && (
-        <button
-          onClick={() => { setSearch(""); setGrade(""); setAttribute(""); setPassiveType(""); setRace(""); }}
-          className="text-xs text-gray-400 hover:text-gray-600 underline"
-        >
-          필터 초기화
-        </button>
-      )}
+      <button
+        onClick={() => { setSearch(""); setGrade(""); setAttribute(""); setPassiveType(""); setRace(""); }}
+        className={`text-xs text-gray-400 hover:text-gray-600 underline ${!hasFilter ? "invisible" : ""}`}
+      >
+        필터 초기화
+      </button>
     </div>
   );
 }
