@@ -69,7 +69,7 @@ export function CupalsFilter({
       </div>
 
       <div className="flex flex-wrap gap-2 items-center">
-        <span className="text-sm font-medium text-gray-500 w-10">속성</span>
+        <span className="text-sm font-medium text-gray-500 w-14">대상속성</span>
         {ATTRIBUTES.map((a) => (
           <button
             key={a}
@@ -87,7 +87,7 @@ export function CupalsFilter({
       </div>
 
       <div className="flex flex-wrap gap-2 items-center">
-        <span className="text-sm font-medium text-gray-500 w-10">종족</span>
+        <span className="text-sm font-medium text-gray-500 w-14">대상종족</span>
         {CUPAL_RACES.map((r) => (
           <button
             key={r}
