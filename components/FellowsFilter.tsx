@@ -34,7 +34,7 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
             className={`h-7 px-3 rounded-full text-xs font-bold transition-all ${
               grade === g
                 ? GRADE_STYLES[g]?.className + " ring-2 ring-inset ring-amber-400"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-transparent"
             }`}
           >
             {g}
@@ -51,7 +51,7 @@ export function FellowsFilter({ search, setSearch, grade, setGrade, lineage, set
             className={`h-7 px-3 rounded-full text-xs font-semibold transition-all ${
               lineage === l
                 ? (LINEAGE_STYLES[l] || "bg-gray-200 text-gray-700") + " ring-2 ring-inset ring-amber-400"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-transparent"
             }`}
           >
             {l}

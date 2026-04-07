@@ -35,7 +35,7 @@ export function CardsFilter({ search, setSearch, grade, setGrade, attribute, set
             className={`h-7 px-3 rounded-full text-xs font-bold transition-all ${
               grade === g
                 ? (CARD_GRADE_STYLES[g] || "bg-gray-200 text-gray-700") + " ring-2 ring-inset ring-amber-400"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-transparent"
             }`}
           >
             {g}
@@ -70,7 +70,7 @@ export function CardsFilter({ search, setSearch, grade, setGrade, attribute, set
             className={`h-7 px-3 rounded-full text-xs font-semibold transition-all ${
               race === r
                 ? "bg-purple-100 text-purple-700 border border-purple-200 ring-2 ring-inset ring-amber-400"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-transparent"
             }`}
           >
             {r}
