@@ -1,0 +1,13 @@
+[
+  {
+    "id": "demon-lord-naktis",
+    "name": "마군주 나크티스",
+    "grade": "전설",
+    "effect": "전기 속성 대상 공격 시 피해량 증가",
+    "minValue": "3.36%",
+    "maxValue": "12%",
+    "effectAttribute": "전기",
+    "effectRace": "",
+    "effectStats": ["피해량"]
+  }
+]
